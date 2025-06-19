@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles/my-styles.css"> <!-- Link to external CSS file -->
+
+</head>
+
+<style>
+    /* Left one style here so show a style section in HTML */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <br>
+        <h1>JAMES BAMPTON <span style="color: #105570; font-size: 16px;">BSc.Hons</span></h1>
+        <!-- Example span element -->
+    </header>
+
+    <nav>
+        <div><a href="#summary" class="item">SUMMARY</a>
+            <a href="#interests" class="item">INTERESTS</a>
+            <a href="#guitars" class="item">GUITARS</a>
+            <a href="#contact" class="item">CONTACT</a>
+        </div>
+    </nav>
+
+    <main>
+        <br>
+        <br><br>
+        <p style="font-size: 42px" class="bio-sum">What !!! <span style="color:orange">No grid items or flexbox used,
+                are you mad?</span></p>
+
+        <p class="bio-sum">Welcome to my portfolio! Here you can find information about me and my Hofners.</p>
+
+        <div id="summary"></div>
+        <br><br>
+        <div class="center">
+            <h2 style="text-align: center; color:#3facce">SUMMARY</h2> <!-- Example in line style -->
+            <img src="images/me.jpg" alt="James B"
+                style="width: 300px; height: auto; border-radius: 50%; border-style: solid ; border-color: white; border-width: 4px;">
+            <p style="font-size: 16px;">A degree qualified, DIY and renovation enthusiast with a building trade
+                background and a portfolio highlighting a variety of skills obtained over two decades within the IT
+                industry and renovating properties in the UK and France.
+                My first ever job was building and installing fireplaces in materials such as Slate, Marble, Stone,
+                Brick and Granite. I decided to re-educate and studied for a Degree in
+                Computing at Portsmouth University. After completing my degree I went straight into a job at IBM. During
+                this 25 year period at IBM, my passion for building never left me. My currnet focus is on learning how
+                to code properly and swing into a career as a full stack
+                developer.
+            </p>
+        </div>
+        <div id="interests"></div>
+        <br><br>
+        <div class="center">
+            <h2 style="text-align: center; color:#3facce">INTERESTS</h2> <!-- Example in line style -->
+            <p style="font-size: 16px;" ;>In my spare time, I keep fit by attending running classes, boxfit classes
+                and
+                gym work. I enjoy music both listening and playing the guitar in a band. I have also restored a
+                classic
+                mini and enjoy tinkering around under the bonnet.
+                I am very interested in graphics design and web design, I have a portfolio link at the bottom of this
+                page where you can see samples of the work I have
+                designed.
+            </p>
+        </div>
+
+        <div id="guitars"></div>
+        <br><br>
+        <div class="center">
+
+            <div class="center">
+                <h2 style="text-align: center; color:#3facce">GUITARS</h2> <!-- Example in line style -->
+                <p style="font-size: 16px;" ;>Check out these beautiful Hofner guitars.
+                    I have a passion for this style of guitar, know as "Arch Top".Each guitar has its own unique
+                    character and sound, making them a joy to play.
+                </p>
+            </div>
+
+
+            <div class="images1"><img src="images/hof-cong.jpg" style="width:500px">
+                <p>Hofner Congress c.1960 </p>
+            </div>
+            <div class="images2"><img src="images/hof-black.jpg" style="width:500px">
+                <p>Hofner Congress c.1963</p>
+            </div>
+            <div class="images3"><img src="images/hof455.jpg" style="width:500px">
+                <p>Hofner 455 c.1958</p>
+            </div>
+
+    </main>
+
+    <section>
+        <br><br>
+        <div class="center">
+            <h2 id="contact" style="text-align: center; color:#3facce">CONTACT</h2>
+            <p style="font-size: 16px;">Please feel free to drop me message by completing the following form.
+            </p>
+
+            <div class="form-container">
+                <div class="oneliner">
+
+                    <form action="submit.php" method="post">
+
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <br>
+                        <br>
+                        <input type="button" value="Message">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <article></article>
+
+    <footer class="footsy">
+        <div>
+            <p style="font-size: 16px;">© 2025 James Bampton. All rights reserved.</p>
+            <p><a style="color:black" href="mailto:bamptini@hotmail.com">Send Email</a></p>
+            <P><a style="color:black" href="http://themender.co.uk" target="_blank">My Portfolio Site</a></P>
+            <P><a href="images/commits.png" style="width:500px" target="_blank">COMMIT HISTORY</a></P>
+        </div>
+    </footer>
+
+</body>
+
+</html>
