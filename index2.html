@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bubbles Laundrette</title>
+
+
+    <!-- Bootstrap me up- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Custom Goole Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+    <!-- Custom Stylesheet -->
+    <link href="/styles/styles.css" rel="stylesheet">
+
+    <!--  jQuery script  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <style>
+        :root {
+            --primary-color: #eec3c3ff;
+            /* Light pink */
+            --secondary-color: #ffffff;
+            /* White */
+            --accent-color: #ff00ff00;
+            /* Purble*/
+            --ffamily: Arial, sans-serif;
+
+            --header-dg: #efc2c2ff;
+
+            --radius: 5px;
+
+        }
+
+        .bg-background {
+            background: var(--accent-color);
+        }
+
+
+        .banner-bg {
+            background: var(--header-dg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            /* Adjust as needed */
+
+        }
+
+        .banner-bg img {
+            width: auto;
+
+            /* Adjust as needed */
+
+        }
+
+        .card-section-bg {
+
+            background: var(--secondary-color);
+            border: none;
+        }
+
+        .card {
+
+            border: none;
+        }
+
+
+        #bub1 {
+            position: relative;
+            animation: bounceVertically 6s ease-in-out infinite;
+            padding-left: 30px;
+        }
+
+        @keyframes bounceVertically {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                /* Start and end at the same position */
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Move up */
+            }
+        }
+
+        #bub2 {
+            position: relative;
+            animation: bounceVertically 5s ease-in-out infinite;
+            padding-right: 30px;
+        }
+
+        @keyframes bounceVertically {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                /* Start and end at the same position */
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Move up */
+            }
+        }
+
+        #bub3 {
+            position: relative;
+            animation: bounceVertically 7s ease-in-out infinite;
+            padding-left: 30px;
+        }
+
+        @keyframes bounceVertically {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                /* Start and end at the same position */
+            }
+
+            50% {
+                transform: translateY(-20px);
+                /* Move up */
+            }
+        }
+
+        .flexy-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-background">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img style="width:50%" src=""></a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#summary" class="item">OUR BUSINESS</a></li>
+                <li class="nav-item"></li><a class="nav-link" href="#interests" class="item">SERVICES</a></li>
+                <li class="nav-item"></li><a class="nav-link" href="#guitars" class="item">PRICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" class="item">ENVIRONMENT</a></li>
+
+        </nav>
+
+        <header>
+            <div class="banner-bg"><img src="images/bubbles-banner2.png">
+                <p></p>
+            </div>
+
+        </header>
+
+        <section class="flexy-container">
+            <div style="padding: 20px" class="column">
+                <div class="col-sm-12 p-3 card-section-bg text-white">
+
+                    <div class="card" style="width: 18rem; height:252px">
+                        <img id="bub1" class="card-img-top" src="/images/bubble-mid.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">content.</p>
+                        </div>
+                    </div> <br>
+
+                    <div class="card" style="width: 18rem; height:252px">
+                        <img id="bub2" class="card-img-top" src="/images/bubble-mid.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">content.</p>
+                        </div>
+                    </div> <br>
+
+                    <div class="card" style="width: 18rem; height:252px">
+                        <img id="bub3" class="card-img-top" src="/images/bubble-mid.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <footer>
+            <div style="padding: 20px" class="row">
+                <div class="col-sm-3 p-3 bg-primary text-white">FOOTER SIDE</div>
+                <div class="col-sm-6 p-3 bg-dark text-white">FOOTER MID</div>
+                <div class="col-sm-3 p-3 bg-dark text-white">FOOTER SIDE</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+
+</html>
