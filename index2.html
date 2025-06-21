@@ -190,27 +190,30 @@
                 <div class="col-sm-12 p-3 card-section-bg text-white">
 
                     <div class="card" style="width: 18rem; height:252px">
-                        <a href=""><img id="bub1" class="card-img-top" src="/images/bubble-bio-white.png"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text"></p>
-                            </div>
-                    </div> <br>
-
-                    <div class="card" style="width: 18rem; height:252px">
-                        <img id="bub2" class="card-img-top" src="/images/bubble-service-white.png" alt="Card image cap">
+                        <a><img id="bub1" class="card-img-top" src="/images/bubble-bio-white.png"
+                                alt="Card image cap"></a>
                         <div class="card-body">
                             <p class="card-text"></p>
                         </div>
                     </div> <br>
 
                     <div class="card" style="width: 18rem; height:252px">
-                        <img id="bub3" class="card-img-top" src="/images/bubble-planet-white.png" alt="Card image cap">
+                        <a><img id="bub2" class="card-img-top" src="/images/bubble-service-white.png"
+                                alt="Card image cap"></a>
+                        <div class="card-body">
+                            <p class="card-text"></p>
+                        </div>
+                    </div> <br>
+
+                    <div class="card" style="width: 18rem; height:252px">
+                        <a><img id="bub3" class="card-img-top" src="/images/bubble-planet-white.png"
+                                alt="Card image cap"></a>
                         <div class="card-body">
                             <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
+            </div>
 
 
         </section>
@@ -227,12 +230,11 @@
 
     <script>
         $(document).ready(function () {
-            $("#bub1").click(function () {
-                $("#bioModal").modal('show');
+            $('#bub1').click(function () {
+                $('#bioModal').modal('show');
             });
         });
     </script>
-
 
     <!-- Modal HTML -->
     <div id="bioModal" class="modal fade" tabindex="-1">
