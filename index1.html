@@ -7,8 +7,7 @@
 
     <!-- Bootstrap me up- -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="scripts/popper.min.js"> <!-- Required for drop down -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles/stylesjb.css"> <!-- Link to external CSS file -->
 
     <!-- Custom Goole Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
@@ -17,274 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
-    <style>
-        :root {
-            --primary-color: eec3c3ff;
-            /* Light pink */
-            --secondary-color: #ffffff;
-            /* White */
-            --accent-color: rgba(207, 92, 207, 0.568);
-            /* Purble*/
-            --ffamily: Arial, sans-serif;
-
-            --header-dg: #efc2c2ff;
-
-            --radius: 5px;
-
-            --berlinfont: 'Berlin Sans FB';
-
-        }
-
-        .bg-background {
-            background: var(--accent-color);
-        }
-
-
-        .banner-bg {
-            background: var(--header-dg);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            /*box-shadow: 1px 0px 10px rgb(12, 12, 12);*/
-
-            /* Adjust as needed */
-
-        }
-
-        .banner-bg img {
-            width: auto;
-
-            /* Adjust as needed */
-
-        }
-
-        .card-section-bg {
-
-            background: var(--secondary-color);
-            border: none;
-        }
-
-        .card {
-
-            border: none;
-        }
-
-
-        #bub1 {
-            position: relative;
-            animation: bounceVertically 6s ease-in-out infinite;
-            padding-left: 30px;
-        }
-
-        @keyframes bounceVertically {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                /* Start and end at the same position */
-            }
-
-            50% {
-                transform: translateY(-20px);
-                /* Move up */
-            }
-        }
-
-        #bub2 {
-            position: relative;
-            animation: bounceVertically 5s ease-in-out infinite;
-            padding-right: 30px;
-        }
-
-        @keyframes bounceVertically {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                /* Start and end at the same position */
-            }
-
-            50% {
-                transform: translateY(-20px);
-                /* Move up */
-            }
-        }
-
-        #bub3 {
-            position: relative;
-            animation: bounceVertically 7s ease-in-out infinite;
-            padding-left: 30px;
-        }
-
-        @keyframes bounceVertically {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                /* Start and end at the same position */
-            }
-
-            50% {
-                transform: translateY(-20px);
-                /* Move up */
-            }
-        }
-
-        .flexy-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .footback {
-            color: black;
-            background: var(--accent-color);
-
-        }
-
-        .nav-link {
-
-            font-family: var(--berlinfont);
-            color: white;
-        }
-
-        div.container-fluid {
-            --bs-gutter-x: 0 rem;
-        }
-
-        .container-fluid {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        .navbar {
-            box-shadow: 1px 0px 10px rgb(12, 12, 12);
-            position: relative;
-            margin: 0px;
-        }
-
-        #cafe-img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .modal-header {
-            background: var(--accent-color);
-            color: var(--secondary-color);
-            font-family: var(--fffamily);
-        }
-
-
-        /* Pseudo-elements for Email and Phone Labels */
-        /* Add ✉️ and 📞 icons before the labels */
-        .email-label::before {
-            content: "✉️";
-            /* Unicode for envelope emoji  "\1F4DE"*/
-            margin-right: 5px;
-        }
-
-        .basket-label::before {
-            content: "\1F9FA";
-            /* Unicode for telephone emoji */
-            margin-right: 5px;
-        }
-
-        .iron-label::before {
-            content: "\1F9FA";
-            /* Unicode for telephone emoji */
-            margin-right: 5px;
-        }
-
-        .coffee-label::before {
-            content: "\2615";
-            /* Unicode for telephone emoji */
-            margin-right: 5px;
-        }
-
-        .wash-label::before {
-            content: "\1F9FA";
-            /* Unicode for telephone emoji */
-            margin-right: 5px;
-        }
-
-        .soap-label::before {
-            content: "\1F9FC";
-        }
-
-        .washing-label::before {
-
-            content: "\1F45A";
-        }
-
-        .wind-label::before {
-
-            content: "\1F300";
-        }
-
-        .sun-label::before {
-
-            content: "\1F31E";
-        }
-
-        /*    .navbar-nav>li>a {
-            padding-top: 0px;
-            padding-bottom: 0px;
-            line-height: 0px;
-        }
-
-        .navbar-nav>li>a {
-            padding-top: 0px;
-            padding-bottom: 15px;
-        } */
-
-        /*Font awsome (fa) style */
-
-        .fa:hover {
-            opacity: 0.9;
-        }
-
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
-
-        .fa-pinterest {
-            background: #cb2027;
-            color: white;
-        }
-
-        .fa-instagram {
-            background: #f559e8;
-            color: white;
-        }
-
-        .fa-facebook {
-            background: #3c3ed6;
-            color: white;
-        }
-
-        .fa {
-            padding: 20px;
-            font-size: 40px;
-            width: 60px;
-            text-decoration: none;
-            margin: 5px 80px;
-        }
-
-        .icon-style {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-    </style>
 
 </head>
 
@@ -296,10 +29,10 @@
                 <a class="navbar-brand" href="#"><img style="width:50%" src=""></a>
             </div>
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#dummy" class="item">BIO</a></li>
-                <li class="nav-item"></li><a class="nav-link" href="#dummy" class="item">SERVICES</a></li>
-                <li class="nav-item"></li><a class="nav-link" href="#dummy" class="item">PRICES</a></li>
-                <li class="nav-item"><a class="nav-link" href="#dummy" class="item">PLANET</a></li>
+                <li id="menu1" class="nav-item"><a class="nav-link" href="#dummy" class="item">BIO</a></li>
+                <li id="menu2" class="nav-item"></li><a class="nav-link" href="#dummy" class="item">SERVICES</a></li>
+                <li id="menu4" class="nav-item"></li><a class="nav-link" href="#dummy" class="item">PRICES</a></li>
+                <li id="menu3" class="nav-item"><a class="nav-link" href="#dummy" class="item">PLANET</a></li>
 
         </nav>
 
@@ -349,87 +82,66 @@
 
                 </div> -->
 
-                <div class="col-sm-2 p-3 footback">
+                <div class="col-sm-4 p-3 footback">
                     <section
                         style="font-family: var(--font-family); background: #fef7e0; border: 2px solid #ffcc33; padding: 1em; border-radius: 10px; max-width: 600px; margin: auto;">
                         <h2 style="text-align: center; color: #ff6600; font-size: 1.1em; text-shadow: 1px 1px #fff;">
-                            Social</h2><br>
-                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Join us on social media</b><br>
-                            At <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>, we really want
-                            to connect with our customers, join in with the conversations and find out whats happening.
+                            Prices</h2>
+                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Let us do the work</b><br>
+                            At <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>, offers a
+                            personal cleaning service
+                            by fully trained and caring staff. Prices start from....
                         </p>
                         <ul style="list-style: none; padding: 0;">
-                            <li class="washing-label"><strong>Washing:</strong> Small loads or king-sized chaos—bring
-                                it on!</li>
-                            <li class="wind-label"><strong>Drying:</strong> Fast, fabric-friendly tumble drying</li>
-                            <li class="basket-label"><strong>Ironing:</strong> As crisp as a Saturday morning playlist
+                            <li><strong>Washing Service:</strong> £5 - Small loads & £10 large loads</li>
+                            <li><strong>Drying Service:</strong> £5 - Small loads & £10 large loads</li>
+                            <li><strong>Ironing Service:</strong> £5 - Small loads & £10 large loads
                             </li>
-                            <li class="soap-label"><strong>Stain Removal:</strong> Spotless results, even on your curry
-                                shirt</li>
-                            <li class="coffee-label"><strong>In-store Café:</strong> Chill with a brew while your
-                                washing spins around</li>
+                            <li><strong>Stain Removal:</strong> £5 per item</li>
+                            <li><strong>In-store Café:</strong> See our Menu</li>
                         </ul>
                     </section>
                 </div>
 
 
                 <div class="col-sm-4 p-3 footback">
-                    <section class="services"
-                        style="font-family: var(--font-family); background: #fcfbfb; border: 2px solid #ffcc33; padding: 1em; border-radius: 10px; max-width: 600px; margin: auto;">
-                        <h2 style="text-align: center; color: #ff6600; font-size: 1.1em; text-shadow: 1px 1px #fff;">
-                            Services</h2><br>
-                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Welcome to Your Local
-                                Eco-Friendly Laundrette</b><br>
-                            At <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>, laundry day gets
-                            a bubbly
-                            upgrade. Here’s how we keep your clothes—and your spirits—fresh:
-                        </p>
-                        <ul style="list-style: none; padding: 0;">
-                            <li class="washing-label"><strong>Washing:</strong> Small loads or king-sized chaos—bring
-                                it on!</li>
-                            <li class="wind-label"><strong>Drying:</strong> Fast, fabric-friendly tumble drying</li>
-                            <li class="basket-label"><strong>Ironing:</strong> As crisp as a Saturday morning playlist
-                            </li>
-                            <li class="soap-label"><strong>Stain Removal:</strong> Spotless results, even on your curry
-                                shirt</li>
-                            <li class="coffee-label"><strong>In-store Café:</strong> Chill with a brew while your
-                                washing spins around</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <div class="col-sm-4 p-3 footback">
                     <section
                         style="font-family: var(--font-family); background: #fef7e0; border: 2px solid #ffcc33; padding: 1em; border-radius: 10px; max-width: 600px; margin: auto;">
                         <h2 style="text-align: center; color: #ff6600; font-size: 1.1em; text-shadow: 1px 1px #fff;">
-                            Locations</h2><br>
-                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>We have various location
+                            Locations</h2>
+                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Pop in for a visit
                             </b><br>
-                            Find you local <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>, we
-                            have locations dotted around the local area
+                            Find you local <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>
                         </p>
-
+                        <address id="address"></address>
 
                         <div class="dropdown">
-                            <button ckass="btn btn-secondary dropdown-toggle" type="button" id="buttonMenu"
-                                data-toggle="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown">
                                 Locations
                             </button>
-                            <div class="dropdown-menu">
-                                <a #id="emsworth" class="dropdown-item">Emsworth</a>
-                                <a #id="emsworth" class="dropdown-item">Winchester</a>
-                                <a #id="emsworth" class="dropdown-item">Chichester</a>
-                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#"
+                                        data-address="5 High Street, Emsworth, PO10 7AB">Emsworth</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        data-address="Cathedral Way, Chichester, PO19 1PX">Chichester</a></li>
+                                <li><a class="dropdown-item" href="#"
+                                        data-address="44 Charles Street, Winchester, SO23 9RS">Winchester</a>
+                                </li>
+                            </ul>
                         </div>
+                        <br><br>
                     </section>
                 </div>
 
-                <div class="col-sm-2 p-3 footback">
+                <div class="col-sm-4 p-3 footback">
                     <section
                         style="font-family: var(--font-family); background: #fef7e0; border: 2px solid #ffcc33; padding: 1em; border-radius: 10px; max-width: 600px; margin: auto;">
                         <h2 style="text-align: center; color: #ff6600; font-size: 1.1em; text-shadow: 1px 1px #fff;">
-                            Social</h2><br>
-                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Join us on social media</b><br></p>
+                            Social</h2>
+                        <p style="font-size: 1em; line-height: 1.6; color: #333;"><b>Join us on social media</b></p>
+                        Socialise with <strong style="color: var(--accent-color);">Bubbles Laundrette</strong>
+                        , join in with the discussions and share your experience. Let us know how we are doing.</p>
                         <div class="icon-style"><!-- Add font awesome icons -->
                             <a href="#" class="fa fa-linkedin"></a>
                             <a href="#" class="fa fa-facebook"></a>
@@ -440,9 +152,12 @@
                 </div>
 
             </div>
+
         </footer>
 
     </div>
+
+    <!-- BUBBLES LINKS TO MODALS -->
 
     <script>
         $(document).ready(function () {
@@ -468,7 +183,33 @@
         });
     </script>
 
-    <!-- Modal HTML -->
+    <!-- MENU LINKS TO MODALS -->
+
+    <script>
+        $(document).ready(function () {
+            $('#menu1').click(function () {
+                $('#bioModal').modal('show');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu2').click(function () {
+                $('#bioModal2').modal('show');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu3').click(function () {
+                $('#bioModal3').modal('show');
+            });
+        });
+    </script>
+
+    <!-- MODALS HTML -->
     <div id="bioModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -608,5 +349,16 @@
         </div>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script>
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            const address = event.target.getAttribute('data-address');
+            document.getElementById('address').textContent = address;
+        });
+    });
+</script>
 
 </html>

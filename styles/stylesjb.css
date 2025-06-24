@@ -1,0 +1,263 @@
+:root {
+  --primary-color: eec3c3ff;
+  /* Light pink */
+  --secondary-color: #ffffff;
+  /* White */
+  --accent-color: rgba(207, 92, 207, 0.568);
+  /* Purble*/
+  --ffamily: Arial, sans-serif;
+
+  --header-dg: #efc2c2ff;
+
+  --radius: 5px;
+
+  --berlinfont: "Berlin Sans FB";
+}
+
+.bg-background {
+  background: var(--accent-color);
+}
+
+.banner-bg {
+  background: var(--header-dg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /*box-shadow: 1px 0px 10px rgb(12, 12, 12);*/
+
+  /* Adjust as needed */
+}
+
+.banner-bg img {
+  width: auto;
+
+  /* Adjust as needed */
+}
+
+.card-section-bg {
+  background: var(--secondary-color);
+  border: none;
+}
+
+.card {
+  border: none;
+}
+
+#bub1 {
+  position: relative;
+  animation: bounceVertically 6s ease-in-out infinite;
+  padding-left: 30px;
+}
+
+@keyframes bounceVertically {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Start and end at the same position */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up */
+  }
+}
+
+#bub2 {
+  position: relative;
+  animation: bounceVertically 5s ease-in-out infinite;
+  padding-right: 30px;
+}
+
+@keyframes bounceVertically {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Start and end at the same position */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up */
+  }
+}
+
+#bub3 {
+  position: relative;
+  animation: bounceVertically 7s ease-in-out infinite;
+  padding-left: 30px;
+}
+
+@keyframes bounceVertically {
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Start and end at the same position */
+  }
+
+  50% {
+    transform: translateY(-20px);
+    /* Move up */
+  }
+}
+
+.flexy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footback {
+  color: black;
+  background: var(--accent-color);
+}
+
+.nav-link {
+  font-family: var(--berlinfont);
+  color: white;
+}
+
+div.container-fluid {
+  --bs-gutter-x: 0 rem;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar {
+  box-shadow: 1px 0px 10px rgb(12, 12, 12);
+  position: relative;
+  margin: 0px;
+}
+
+#cafe-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-header {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  font-family: var(--fffamily);
+}
+
+/* Pseudo-elements for Email and Phone Labels */
+/* Add ✉️ and 📞 icons before the labels */
+.email-label::before {
+  content: "✉️";
+  /* Unicode for envelope emoji  "\1F4DE"*/
+  margin-right: 5px;
+}
+
+.basket-label::before {
+  content: "\1F9FA";
+  /* Unicode for telephone emoji */
+  margin-right: 5px;
+}
+
+.iron-label::before {
+  content: "\1F9FA";
+  /* Unicode for telephone emoji */
+  margin-right: 5px;
+}
+
+.coffee-label::before {
+  content: "\2615";
+  /* Unicode for telephone emoji */
+  margin-right: 5px;
+}
+
+.wash-label::before {
+  content: "\1F9FA";
+  /* Unicode for telephone emoji */
+  margin-right: 5px;
+}
+
+.soap-label::before {
+  content: "\1F9FC";
+}
+
+.washing-label::before {
+  content: "\1F45A";
+}
+
+.wind-label::before {
+  content: "\1F300";
+}
+
+.sun-label::before {
+  content: "\1F31E";
+}
+
+/*    .navbar-nav>li>a {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            line-height: 0px;
+        }
+
+        .navbar-nav>li>a {
+            padding-top: 0px;
+            padding-bottom: 15px;
+        } */
+
+/*Font awsome (fa) style */
+
+.fa:hover {
+  opacity: 0.9;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f559e8;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3c3ed6;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 1px;
+}
+
+.icon-style {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 7px;
+}
+
+.icon-style a {
+  border-radius: 7px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.location .dropdown {
+  background-color: orange;
+  height: 100%;
+  width: 200px;
+  justify-content: center;
+}
